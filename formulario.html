@@ -29,6 +29,7 @@
         <label>
             Arquivos:
         </label><br>
+        <!-- metodo de adicionar arquivos -->
         <input type="file" name="file"><br><br>
         
         <select name="banco">
@@ -48,6 +49,11 @@
             <option value="rebok">
         </datalist>
 
+        <label>
+            Comentario: 
+        </label><br>
+        <textarea name="coment" rows="4" cols="50"></textarea><br><br>
+
 
         <label> 
             Qual a região escolhida para viajar
@@ -57,7 +63,18 @@
         <input type="radio" name="viajem" value="campo" checked> campo <br>
         <input type="radio" name="viajem" value="cidade"> cidade <br>
         <input type="radio" name="viajem" value="praia"> praia <br>
-        <input type="radio" name="viajem" value="montanha"> montanha <br>
+        <input type="radio" name="viajem" value="montanha"> montanha <br><br>
+
+        <label>
+            Selecione a data e check-in:
+        </label><br>
+
+        <!-- area de preenchimento de uma data -->
+        <input type="date" name="checkin"><br><br>
+
+        <!-- mecanica de botão, adicioando evento alert-->
+        <button type="button" onclick="alert('Bom Dia')">Click Aqui para receber um Bom dia</button><br>
+
 
         <hr><br>
         <input type="submit" value="enviar"> &nbsp;&nbsp;&nbsp;
