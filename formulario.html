@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body>
+    <p>Inicio do formulario</p>
+
+    <form>
+        <label>
+            Nome:
+        </label><br>
+
+        <input type="text" name="nome"
+        size="30" maxlength="20" required autofocus placeholder="digite seu nome"><br><br>
+
+        <labels>
+            Email:
+        </label><br>
+        <input type="email" name="email"
+        size="50" maxlength="40" required placeholder="examplo@gmail.com"><br><br>
+
+        <label>
+            Senha:
+        </label><br>
+        <input type="password" name="senha" size="10"><br><br>
+
+        <label>
+            Arquivos:
+        </label><br>
+        <input type="file" name="file"><br><br>
+        
+        <select name="banco">
+            <option value="caixa">Caixa</option>
+            <option value="santander">Santander</option>
+            <option value="banco_do_brasil">Banco do Brasil</option>
+            <option value="itau">Itau</option>
+        </select><br><br>
+        
+        <!-- semelhante ao select, porem dem um visual levemente diferente-->>
+        <input list="tenis"><br><br>
+        <datalist id="tenis">
+            <option value="nike">
+            <option value="mizuno">
+            <option value="uner armour">
+            <option value="adidas">
+            <option value="rebok">
+        </datalist>
+
+
+        <label> 
+            Qual a região escolhida para viajar
+        </label><br>
+
+
+        <input type="radio" name="viajem" value="campo" checked> campo <br>
+        <input type="radio" name="viajem" value="cidade"> cidade <br>
+        <input type="radio" name="viajem" value="praia"> praia <br>
+        <input type="radio" name="viajem" value="montanha"> montanha <br>
+
+        <hr><br>
+        <input type="submit" value="enviar"> &nbsp;&nbsp;&nbsp;
+        <input type="reset" value="limpar">
+        <br><br>
+    </form>
+</body>
+</html> 
